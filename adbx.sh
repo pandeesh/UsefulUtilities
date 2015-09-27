@@ -25,7 +25,7 @@ fi
 
 adb_path=`which adb`
 
-[[ `$adb_path devices|wc -l` -gt 2 ]] && echo "there's a device connected" || (echo "please connect a device" && exit -1) 
+[[ `$adb_path devices|wc -l` -gt 2 ]] && echo "there's a device connected" || { echo "please connect a device";exit -1;} 
 
 #continue if there's a device connected 
 
