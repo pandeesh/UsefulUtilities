@@ -33,4 +33,4 @@ $adb_path pull $1 $2 && $adb_path shell rm -rf ${1}*
 
 #alert copy completed only for OSX
 
-[[ `which sw_vers|wc -l` -ne 0 ]] && osascript -e 'tell app "Finder" to display dialog "Copy from android device completed"' || exit 0 
+[[ `which sw_vers|wc -l` -ne 0 ]] && osascript -e 'tell app "Finder" to display dialog "Copy from your android device completed"' || exit 0 
