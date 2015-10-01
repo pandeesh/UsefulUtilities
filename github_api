@@ -16,15 +16,28 @@ def get_repos(user):
     soup = json.load(res)
 
     logger = logging.getLogger('github api')
-
-    logger.info('printing','repositaries')
+    logger.info('printing','repositories')
 
     for i, j in enumerate(soup):
         print soup[i]['url']
+        
+def get_followers(user):
+    """accepts the user name and returns no of followers and follwing data"""
+    res = urllib2.urlopen("https://api.github.com/users/" + user)
+    soup = json.load(res)
+
+    logger = logging.getLogger('github api')
+    logger.info('printing','followers')
+
+    print "followers:", soup['followers']
+    print "following:", soup['following']
 
 
 #tests
 x = get_repos('pandeesh')
+print(x)
+
+x = get_followers('pandeesh')
 print(x)
 
 
