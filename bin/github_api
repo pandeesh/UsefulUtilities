@@ -3,7 +3,7 @@
 """
 Accepts an user name and returns a quick summary about the repositories and the commits made recently.
 
-IT'S NOT YET COMPLETE. WORK IN PROGRESS. PROBBALY SHOULDN"t KEEP IN MASTER. But, I am sleepy now.
+IT'S NOT YET COMPLETE. WORK IN PROGRESS. PROBABLY SHOULDN"t KEEP IN MASTER. But, I am sleepy now.
 """
 
 import urllib2
